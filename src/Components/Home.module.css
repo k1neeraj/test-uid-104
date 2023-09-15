@@ -1,0 +1,84 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: url("https://img.freepik.com/free-vector/realistic-style-technology-particle-background_23-2148426704.jpg?w=900&t=st=1694783156~exp=1694783756~hmac=a165cf1627cc0be7e1f282a76c640f3fede6a4a5c30adfadcf116d4daece9947");
+  background-size: cover;
+}
+
+.name {
+  text-align: center;
+  margin-top: 250px;
+  color: #ea4d4d;
+  font-size: 100px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn {
+  margin-top: 30px;
+  background-color: #e74c3c;
+  color: #ffffff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  animation: wiggle 2s linear infinite;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Keyframes */
+@keyframes wiggle {
+  0%,
+  7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%,
+  100% {
+    transform: rotateZ(0);
+  }
+}
+
+.btn:hover {
+  background-color: #c0392b;
+  transform: scale(1.1);
+}
+
+@keyframes rotate360 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
